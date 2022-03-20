@@ -51,7 +51,6 @@
         "prettier/prettier": "error",
         "no-unused-vars": "warn",
         "no-console": "off",
-        "func-names": "off",
         "no-process-exit": "off",
         "object-shorthand": "off",
         "class-methods-use-this": "off",
@@ -85,6 +84,8 @@
                 "tsx": "never"
             }
         ],
-        "func-style": ["error", "declaration", { "allowArrowFunctions": true }]
+        "import/prefer-default-export": 0,
+        "react/function-component-definition": [2, { "namedComponents": "arrow-function", "unnamedComponents": "function-expression" }],
+        "react/require-default-props": 0
     }
 }
