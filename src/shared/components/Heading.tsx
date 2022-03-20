@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Heading as BaseHeading, HeadingLevel } from 'baseui/heading';
-import { ParagraphSmall } from 'baseui/typography';
 
 interface HeadingProps {
   styleLevel: number;
