@@ -8,7 +8,7 @@ interface CardProps {
   children?: any;
 }
 
-export const Card: React.FC<CardProps> = ({ title, children, ...props }) => (
+export const Card: React.FC<CardProps> = ({ title, children }) => (
   <BaseCard
     title={title}
     overrides={{
