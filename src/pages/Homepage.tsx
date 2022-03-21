@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Background, Card, Heading } from '../shared/components';
+import { Background, Button, Card, FormControl, Heading, Input } from '../shared/components';
 import { colors, spacing } from '../shared/themes';
 
 const Slogan = styled.div`
@@ -16,6 +16,14 @@ export const Homepage = () => (
         A good property can sustain itself.
       </Heading>
     </Slogan>
-    <Card />
+    <Card>
+      <FormControl label="Selling Price">
+        <Input startEnhancer="$" onChange={() => console.log('sdfsdf')} />
+      </FormControl>
+      <FormControl label="Weekly Rent">
+        <Input startEnhancer="$" onChange={() => console.log('sdfsdf')} />
+      </FormControl>
+      <Button onClick={() => console.log('sdfsdf')}>Submit</Button>
+    </Card>
   </Background>
 );
