@@ -89,6 +89,7 @@
         "react/require-default-props": 0,
         "@typescript-eslint/no-explicit-any": 0,
         "@typescript-eslint/ban-ts-ignore": 0,
-        "react/jsx-props-no-spreading": 0
+        "react/jsx-props-no-spreading": 0,
+        "no-unused-vars": 0,
     }
 }
