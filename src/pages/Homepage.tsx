@@ -68,10 +68,10 @@ export const Homepage = () => {
       </Slogan>
       <Card>
         <FormControl label="Selling Price">
-          <Input startEnhancer="$" onChange={(e) => onInputChange(e)} name="sellingPrice" />
+          <Input startEnhancer="$" onChange={onInputChange} name="sellingPrice" />
         </FormControl>
         <FormControl label="Weekly Rent">
-          <Input startEnhancer="$" onChange={(e) => onInputChange(e)} name="weeklyRent" />
+          <Input startEnhancer="$" onChange={onInputChange} name="weeklyRent" />
         </FormControl>
         <Button
           onClick={addSheet}
