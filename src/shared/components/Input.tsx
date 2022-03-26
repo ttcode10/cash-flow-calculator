@@ -9,7 +9,9 @@ interface InputProps {
   error?: boolean;
   positive?: boolean;
   disabled?: boolean;
-  onChange: () => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  type?: 'email' | 'password';
+  name: string;
 }
 
 export const Input: React.FC<InputProps> = ({
@@ -21,6 +23,8 @@ export const Input: React.FC<InputProps> = ({
   positive,
   disabled,
   onChange,
+  type,
+  name,
 }) => (
   <BaseInput
     startEnhancer={startEnhancer}
@@ -31,5 +35,7 @@ export const Input: React.FC<InputProps> = ({
     positive={positive}
     disabled={disabled}
     onChange={onChange}
+    type={type}
+    name={name}
   />
 );

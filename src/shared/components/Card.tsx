@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card as BaseCard, StyledBody } from 'baseui/card';
+import { Card as BaseCard } from 'baseui/card';
 
 import { spacing } from '../themes';
 
@@ -16,28 +16,12 @@ export const Card: React.FC<CardProps> = ({ title, children }) => (
         style: () => ({
           border: 'none',
           borderRadius: `${spacing.spacing0x}`,
+          width: '100%',
+          padding: `${spacing.spacing2x}`,
         }),
       },
     }}
   >
-    <StyledBody>
-      Proin ut dui sed metus pharetra hend rerit vel non mi. Nulla ornare faucibus ex, non facilisis
-      nisl. Proin ut dui sed metus pharetra hend rerit vel non mi. Nulla ornare faucibus ex, non
-      facilisis nisl. Proin ut dui sed metus pharetra hend rerit vel non mi. Nulla ornare faucibus
-      ex, non facilisis nisl. Proin ut dui sed metus pharetra hend rerit vel non mi. Nulla ornare
-      faucibus ex, non facilisis nisl. Proin ut dui sed metus pharetra hend rerit vel non mi. Nulla
-      ornare faucibus ex, non facilisis nisl. Proin ut dui sed metus pharetra hend rerit vel non mi.
-      Nulla ornare faucibus ex, non facilisis nisl. Proin ut dui sed metus pharetra hend rerit vel
-      non mi. Nulla ornare faucibus ex, non facilisis nisl. Proin ut dui sed metus pharetra hend
-      rerit vel non mi. Nulla ornare faucibus ex, non facilisis nisl. Proin ut dui sed metus
-      pharetra hend rerit vel non mi. Nulla ornare faucibus ex, non facilisis nisl. Proin ut dui sed
-      metus pharetra hend rerit vel non mi. Nulla ornare faucibus ex, non facilisis nisl. Proin ut
-      dui sed metus pharetra hend rerit vel non mi. Nulla ornare faucibus ex, non facilisis nisl.
-      Proin ut dui sed metus pharetra hend rerit vel non mi. Nulla ornare faucibus ex, non facilisis
-      nisl. Proin ut dui sed metus pharetra hend rerit vel non mi. Nulla ornare faucibus ex, non
-      facilisis nisl. Proin ut dui sed metus pharetra hend rerit vel non mi. Nulla ornare faucibus
-      ex, non facilisis nisl.
-    </StyledBody>
     {children}
   </BaseCard>
 );
