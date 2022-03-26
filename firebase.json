@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "cash-flow-calculator-fca86",
     "public": "build",
     "ignore": [
       "firebase.json",
