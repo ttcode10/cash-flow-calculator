@@ -9,7 +9,7 @@ interface InputProps {
   error?: boolean;
   positive?: boolean;
   disabled?: boolean;
-  onChange: () => void;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   type?: 'email' | 'password';
   name: string;
 }

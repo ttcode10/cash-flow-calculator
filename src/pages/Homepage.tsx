@@ -27,10 +27,10 @@ export const Homepage = () => {
   const [sheetId, setSheetId] = useState('');
   const [isSubmitButtonDisabled, setIsSubmitButtonDisabled] = useState(false);
 
-  const onInputChange = (e) => {
+  const onInputChange = (event) => {
     const newValue = {
       ...sheet,
-      [e.target.name]: e.target.value,
+      [event.target.name]: event.target.value,
     };
     setSheet(newValue);
   };
